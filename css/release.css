@@ -1,0 +1,89 @@
+html,body,ul,li{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #f4f4f4;
+}
+.top{
+	height:50px;
+	background-color: white;
+}
+.top a{
+	margin-left: 100px;
+	line-height: 50px;
+}
+.top span{
+	float:right;
+	margin-right: 100px;
+	width:80px;
+	text-align: center;
+	line-height: 48px;
+	border:1px solid red;
+	color:red;
+}
+.top span:hover{
+	color:white;
+	background-color: red;
+}
+.content{
+	background-color: white;
+	height:500px;
+	width:1200px;
+	margin:40px auto;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	height:0;
+	clear:both;
+}
+.left{
+	width:150px;
+	border-right:1px solid #e9e9e9;
+	height:500px;
+	float:left;
+}
+.left a{
+	display:block;
+	color: #4f4f4f;
+    font-size: 14px;
+    width:130px;
+	height:40px;
+	line-height: 40px;
+	padding-left:20px;
+}
+.left a.active{
+	background-color: #C92027;
+	color:white;
+}
+.left a:hover{
+	background-color: #C92027;
+	color:white;
+}
+.left a.choose{
+	color:#bbb;
+	padding-left: 15px;
+}
+.right{
+	float:left;
+	margin-left: 50px;
+}
+.right p input{
+	text-indent: 10px;
+	height:30px;
+	width:900px;
+	margin-top: 30px;
+	background-color: #efefef;
+    color: #4f4f4f;
+}
+select {
+	width: 200px;
+	height: 40px;
+}

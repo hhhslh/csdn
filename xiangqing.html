@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>xiangqing</title>
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/xiangqing.css">
+</head>
+<body>
+<div id="main">
+	<div class="top">
+		<div class="top-left">
+			<div class="left-list"></div>
+			<div class="logo">
+				<img src="./image/CSDN.png">
+			</div>
+		</div>
+		<div class="top-right">
+			<div class="login">  
+				<a href="./release.html">写博客</a>
+				<a href="./myself-center.html">个人中心</a>
+				<a href="./denglu.html">登录</a>      
+			</div>
+		</div>
+	</div>
+	<div class="first">
+		<img src="./image/CSDN-1.jpg">
+		<span>
+			<a href="">CSDN程序人生</a>
+		</span>
+		<div class="focus">
+			<a href="#">关注</a>
+		</div>
+	</div>
+	<div class="content">
+		<h1>
+			<a href="">{{list.title}}</a>
+		</h1>
+		<span class="mes">转载</span>
+		<span class="date">{{list.date}}</span>
+		<span class="read">{{list.read_num}}阅读</span>	
+	</div>
+	<div class="none">
+		<p>点击上方"<span>程序人生</span>"选择置顶公众号</p>
+		<p>第一时间关注程序员身边的故事</p>
+	</div>
+	<div class="quanwen">
+		<img src="./image/p">
+		<p>方法第三方士大夫发斯蒂芬斯蒂芬对方水电费水电费第三方士大夫水电费第三方第三方士大夫对方水电费水电费水电费发顺丰的时代的发生的菲尔特瑞特瑞特让他法第三方士大夫士大夫都是</p>
+		<h1>做事建议</h1>
+		<span>1.项目任务事情很多事，一件件解决</span>
+		<img src="./image/s"> 
+		<p>当你因为项目任务多的感觉按时完不成，烦躁到一件也不想做的时候，或者是因为一件比较难的事情你觉得完成不了而导致了其他事情也不想做的时候。就记住这句话，如果是第一个原因，你就别想那么多，不管事情多不多，一件件来做，如果你什么都不做停在那里的话，不但没有进度，可能还会造成恶性循环。如果是第二个原因的话就跳过难的地方，做能做的，不然因为一件事没有进度就说不过去了。</p>
+		<span>2 任务有计划，到周到日，工作松紧有度</span>
+		<img src="./image/c">
+		<p>这样不至于加班，也不至于太闲。工作的效率，即真正工作的有效时间要提高。不要拖延任务，不然容易形成恶性循环。排计划的目的是战胜惰性，充分利用白天的工作时间。心里需要知道当天要做哪些事情，并把它做完，不然看看微信，聊聊天，不知不觉一天的时间就这样过去了。你所拥有的最宝贵的东西就是你的时间，因为你不能创造更多时间。</p>
+		<span>3 随时记 随地记 及时记</span>
+		<img src="./image/j">
+		<p>生活里的想法、点子，稍纵即逝。所以为了避免忘记，可以随时记录到手机里。不要小看这个习惯，以后可能会有大作用。还有就是平常你花了很长时间解决了一个难题或者错误的时候，记住一定要把它记下来，不论当时有多忙，哪怕记几个关键字都行。其一因为这是你的劳动成果，其二是你不知道下次会不会还会碰到类似的问题。做个备忘，下次就不用做重复的工作了。还有一种情况是，开完一些会议，比如需求对接会后 ，会后应该立即把它整理记下来，别想明天再搞，因为你明天说不定就忘记了。</p>
+	</div>
+	<div class="end">- THE END -</div>
+	<div class="second">
+		<img src="./image/CSDN-1.jpg">
+		<span>
+			<a href="">CSDN程序人生</a>
+		</span>
+		<span class="vie">访问量</span>
+		<span class="num">53万+</span>
+		<span class="far">原创</span>
+		<span class="num">110</span>
+		<span class="more">博主更多文章&gt;</span>
+	</div>
+	<!-- <div class="content-2" v-for="item in list">
+		<h1>
+			<a href="#">{{item.title}}</a>
+		</h1>
+		<span class="net">{{item.content}}</span>
+		<span class="read">{{item.read_num}}</span>
+		<span class="date">{{item.date}}</span>
+	</div> -->
+	<div class="ping">
+		<div class="number">
+			<span class="zong">7条评论</span>
+			<span class="write">写评论</span>
+		</div>
+		<div class="ping-content" v-for="item in contentList">
+			<img :src="item.image">
+			<span class="name">{{item.title}}</span>
+			<span class="answer">回复</span>
+			<p>{{item.content}}</p>
+			<span class="time">{{item.createtime}}</span>
+			<span class="floor">#7楼</span>
+		</div>
+	</div>
+	<div class="bottom">
+		<ul class="clearfix">
+			<li>点赞25</li>
+			<li>评论32</li>
+			<li @click="collect" ref="collects">收藏</li>
+		</ul>
+	</div>
+	</div>
+	<script type="text/javascript" src="./js/xiangqing.js"></script>
+</body>
+</html>

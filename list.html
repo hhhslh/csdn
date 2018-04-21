@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>list</title>
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/list.css">
+
+</head>
+<body>
+	<div id="main">
+		<div class="top">
+			<div class="logo">
+				<img src="./image/CSDN.png">
+			</div>
+			<div class="login">        
+				 <img src="./image/123.jpg">
+			</div>
+			<div class="search">
+				<a href="search.html">
+					<img src="./image/search.png">
+				</a>
+			</div>
+		</div>
+		<div class="kong"></div>
+		<ol class="list" v-for="item in list">
+			<li>{{ item.title }}</li>
+		</ol>
+	</div>
+
+	<script type="text/javascript" src="./js/list.js"></script>
+</body>
+</html>

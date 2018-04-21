@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>release-list</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<ul id="blogList">
+		<li v-for="item in list"> 
+			<span>{{ item.title }}</span>
+			<span>{{ item.date }}</span>   
+			<span>{{ item.read_num }}</span>  
+			<span>{{ item.classify_name }}</span>
+			<button @click="deleteItem(item)">删除</button>
+			<button><a :href="'./release.html?id='+item.id">编辑</a></button>
+		</li>
+	</ul>
+
+	<script type="text/javascript" src="./js/release-list.js"></script>
+</body>
+</html>

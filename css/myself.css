@@ -1,0 +1,308 @@
+html,body,ul,li{
+	padding:0;
+	margin:0;
+}
+html,body {
+    font-size: 62.5%;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.top{
+	font-size: 1.2rem;
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.05);
+    height: 5.2rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo img{
+	position: relative;
+	top:1.2rem;
+	left:13rem;
+}
+.search img{
+	float:right;
+	position: relative;
+	top:-1.5rem;
+	width:2rem;
+	height:2rem;
+}
+.login img{
+	float:right;
+	font-size: 1.4rem;
+    color: #C92027;
+    position: relative;
+    top: -1.5rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.first{
+    width:100%;
+    height:10rem;
+    padding-left:2rem;
+    border-bottom:1px solid #999;
+    position: relative;
+    top:5rem;
+}
+.first img{
+    margin-top: 1.5rem;
+    position: absolute;
+}
+.first span a{
+    font-weight: 700;
+    color: #4f4f4f;
+    font-size: 2rem;
+    position: relative;
+    top:4rem;
+    left:8rem;
+}
+.focus{
+    width:9rem;
+    height:5rem;
+    background-color: red;
+    float:right;
+    border-radius: 0.2rem;
+    position: relative;
+    top:2rem;
+    right:4rem;
+}
+.focus a{
+    color:white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 4.5rem;
+    margin-left: 2.5rem;
+}
+.content{
+    width:100%;
+    height:5rem;
+    border-bottom:1px solid #999;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    position: relative;
+    top: 3rem;
+}
+.content span{
+    position: relative;
+    top:1rem;
+    color:#999;
+}
+.content h1 a{
+    font-size: 2.5rem;
+    line-height: .48rem;
+    font-weight: bold;
+    color:#2f2f2f;
+}
+span.read{
+    margin-left: 1.5rem;
+}
+span.date{
+    margin-left: 1.5rem;
+}
+.none{
+    height:10rem;
+    line-height: 3rem;
+    position: relative;
+    top:3rem;
+}
+.none p{
+    width:70%;
+    margin:0 auto;
+    font-weight: bold;
+    color:rgb(136, 136, 136);
+    font-size: 2rem;
+    line-height: 5rem;
+}
+.none p span{
+    color:rgb(61, 170, 214);
+}
+.quanwen{
+    padding:2rem 2rem;
+}
+.quanwen img{
+    width:36rem;
+    margin-top: 2rem;
+}
+.quanwen p{
+    font-size: 3rem;
+    color: rgb(136, 136, 136);
+    font-family: Optima-Regular, PingFangTC-light;
+    letter-spacing: 0.5px;
+    line-height: 7rem;
+}
+.quanwen h1{
+    font-family: Optima-Regular, PingFangTC-light;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+.quanwen span{
+    font-size: 3rem;
+    font-family: Optima-Regular, PingFangTC-light;
+    color: rgb(255, 104, 39);
+}
+.end{
+    font-size: 3rem;
+    white-space: normal;
+    color: rgb(62, 62, 62);
+    background-color: rgb(255, 255, 255);
+    line-height: 28.4444px;
+    text-align: center;
+}
+.second{
+    width:100%;
+    height:20rem;
+    padding-left:2rem;
+    margin-top: 5rem;
+    border:1px solid #999;
+}
+/*.second img{
+    margin-top: 1.5rem;
+    position: absolute;
+}*/
+.second span a{
+    font-weight: 700;
+    color: #4f4f4f;
+    font-size: 3rem;
+    position: relative;
+    top:-2rem;
+    left:2rem;
+}
+.second span.vie{
+    font-weight: 400;
+    font-size: 3rem;
+    color:#999;
+    position: relative;
+    top:5rem;
+    left:-24rem;
+}
+.second span.num{
+    font-weight: 400;
+    font-size: 3rem;
+    color:rgb(2, 2, 2);
+    position: relative;
+    top:5rem;
+    left:-22rem;
+}
+.second span.far{
+    font-weight: 400;
+    font-size: 3rem;
+    color:#999;
+    position: relative;
+    top:5rem;
+    left:-19rem;
+}
+.second span.more{
+    float:right;
+    color:#79a5e5;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-right: 4rem;
+    margin-top: 8rem;
+}
+.content-2{
+    width:100%;
+    height:7rem;
+    border-bottom:1px solid #999;
+    border-top:1px solid #999;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+}
+.content-2 span{
+    position: relative;
+    top:2rem;
+    font-size: 1.5rem;
+}
+.content-2 h1 a{
+    font-size: 2.5rem;
+    line-height: .48rem;
+    font-weight: bold;
+    color:#2f2f2f;
+}
+span.date{
+    color:#999;
+}
+.ping{
+    background-color: #efefef;
+    padding-left: 2rem;
+}
+.number{
+    height:5rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+.number span.write{
+    color:#4093c6;
+    float:right;
+    margin-right: 2rem;
+}
+.ping-content{
+    height:25rem;
+    margin-top: 5rem;
+}
+.ping-content img{
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+}
+.ping-content span.name{
+    position: relative;
+    top:-4rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.ping-content span.answer{
+    color:#4093c6;
+    float:right;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+.ping-content p{
+    padding-left: 10rem;
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    top:-3rem;
+}
+.ping-content span{
+    position: relative;
+    top:-4rem;
+}
+.ping-content span.time{
+    color:#999;
+    padding-left: 10rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.ping-content span.floor{
+    padding-left: 10rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color:#999;
+}
+.bottom{
+    height:5rem;
+    position: fixed;
+    bottom:0;
+    background-color: #f2f2f2;
+    width:100%;
+}
+.bottom ul li{
+    float:left;
+    width:33.333%;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+.bottom ul a li{
+    color:black;
+}

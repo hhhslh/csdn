@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fabu</title>
+	<link rel="stylesheet" type="text/css" href="./css/release.css">
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+	<script type="text/javascript" src="./js/vue.js"></script>
+	<script type="text/javascript" src="./utf8-php/ueditor.config.js"></script>
+	<script type="text/javascript" src="./utf8-php/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="./utf8-php/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="top">
+			<a>CSDN创作中心</a>
+			<span>写博客</span>
+		</div>
+		<div class="content">
+			<div class="left">
+				<a href="" class="choose">内容</a>
+				<a href=""  class="active">文章管理</a>	
+				<a href="">专栏管理</a>
+				<a href="">评论管理</a>	
+				<a href="">个人分类管理</a>
+				<a href="" class="choose">设置</a>
+				<a href="">博客设置</a>	
+				<a href="">栏目管理</a>
+			</div>
+			<div class="right">
+				<p><input v-model="title" type="text" name="title"></p>
+				<script id="container" name="content" type="text/plain"></script>
+				<p>
+					<select v-model="class_id">
+						<option value="5" selected="selected">日记</option>
+						<option value="4">it</option>
+					</select>
+				</p>
+				<button @click="issue">发布</button>
+				<button @click="editSuc">编辑成功</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/release.js"></script>
+</body>
+</html>

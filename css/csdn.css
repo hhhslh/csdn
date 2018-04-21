@@ -1,0 +1,158 @@
+html,body,ul,li{
+	padding:0;
+	margin:0;
+}
+html,body {
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.top{
+	font-size: 1.2rem;
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.05);
+    height: 5.2rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo img{
+	position: relative;
+	top:1.2rem;
+	left:13rem;
+}
+.search img{
+	float:right;
+	position: relative;
+	top:-1.5rem;
+	width:2rem;
+	height:2rem;
+}
+.login a {
+	float:right;
+	font-size: 1.4rem;
+    color: #C92027;
+    position: relative;
+    top: -1.5rem;
+}
+.clearfix:after{
+	clear:both;
+	display:block;
+	height:0;
+	content:"";
+}
+/*ul{
+	width:200%;
+}
+ul.bar-list {
+	height: 10rem;
+	line-height: 15.3rem;
+	background-color: #f0f0f0;
+	
+}
+ul.bar-list li {
+	float: left;
+	margin-left: 2rem;
+	color: #4f4f4f;
+	font-size: 2.3rem;
+	overflow: scroll;
+}
+ul.bar-list .selected {
+	color: #c92027;
+}*/
+.d-flex {
+    display: flex !important;
+}
+nav {
+    position: relative;
+    width: 100%;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    background: #ebebeb;
+    overflow: hidden;
+    padding-top: 10rem;
+    top:-3rem;
+}
+nav .nav-mask {
+    padding-left: 1.32rem;
+    width: 100%;
+    height: 6rem;
+    overflow-x: auto;
+}
+nav .nav-mask .warp {
+    flex-wrap: nowrap;
+    width: 600%;
+    line-height: .3rem;
+}
+nav a.btn-nav.active {
+    color: #c92027;
+}
+nav a.btn-nav {
+    float: left;
+    display: block;
+    margin-right: 2.4rem;
+    height: 100%;
+    line-height: 3.8rem;
+    font-size: 3.3rem;
+    color: #4f4f4f;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.pic{
+	height: 10rem;
+	width: 100%;
+}
+.swiper-container{
+	height:10rem;
+	width:100%;
+	position: relative;
+	top:-2.8rem;
+}
+.swiper-wrapper .swiper-slide img{
+	width:100%;
+	height:10rem;
+}
+.content{
+	position: relative;
+	top:0;
+	width:100%;
+	height:5rem;
+	border-bottom:1px solid #999;
+	padding: 2rem 2rem;
+	/*margin-top: 2rem;*/
+}
+.content span{
+	position: relative;
+	top:1rem;
+}
+.content h1{
+	font-size: 2.5rem;
+    line-height: .48rem;
+    font-weight: bold;
+    color:#2f2f2f;
+}
+span.mes{
+	color:#349edf;
+}
+span.net{
+	color:#4f4f4f;
+	margin-left: 1.5rem;
+}
+span.read{
+	color:black;
+	margin-left: 1.5rem;
+}
+span.date{
+	color:#999;
+	margin-left: 1.5rem;
+}
