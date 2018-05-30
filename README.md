@@ -84,7 +84,61 @@ getUeditorContent: function(){
 * 编辑完成之后点击"发布"按钮，完成发布博客。
 #### 5、编辑修改发布的博客
 * 进入release-list.html页面，点击"编辑"按钮，回到release.html页面（编辑接口进来的时候带着文章的id号），在发布文章界面需要判断一下是否有文章id，如果有，就根据文章id找到那篇文章，然后把标题，内容和文章分类赋值到页面上，进行修改，之后点击"编辑成功"，即完成编辑修改。
+```
+editSuc:function(){
+       var that=this;
+       $.ajax({
+              url:"http://blog.com/api/blog/doEdit",
+              data:{
+                    "user_id": window.localStorage.user_id,
+                    "blog_id":window.location.search.split("=")[1],
+                    "title": that.title,
+                    "content":that.getUeditorContent(),
+                    "classify_id":that.class_id,
+                   },
+              type:"post",
+              dataType:"json",
+              success: function(res){
+                    if(res.error_code == 0){
+                       alert("编辑成功即将跳转。。。。。。");
+                       window.location.href="./release-list.html"
+                    }else{
+                       alert(res.message);
+                    }
+               },
+               error:function(){
+
+               }
+         })
+}
+```
 #### 6、删除发布的博客
 * 进入release-list.html页面，点击"删除"按钮。删除成功，减少一条博客。
+```
+deleteItem: function(item){
+	var that = this;
+	$.ajax({
+		url: "http://blog.com/api/blog/del",
+		data: {
+			user_id: window.localStorage.user_id,
+			blog_id: item.id,
+		      },
+		type:"post",
+		dataType: "json",
+		success: function(res){
+			if(res.error_code == 0){
+				alert("删除成功");
+				that.list.forEach(function(i,index){
+					if(item== i){
+				  	 that.list.splice(index,1)
+		               	 	}
+				})
+			}else {
+				alert(res.message);
+			}
+		}
+	})
+},
+```
 
 
